@@ -1,0 +1,20 @@
+# common 
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*.bak
+*.orig
+._*
+
+# output
+*.aux
+*.log
+*.lof
+*.lot
+*.out
+*.toc
+*.bbl
+*.blg
+*.pdf
