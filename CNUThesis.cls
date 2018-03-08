@@ -194,7 +194,6 @@
                        top = 35mm,
                     bottom = 25mm}        % 여백 다른 페이지용 여백
   \makefrontcover                          % 앞표지 생성
-  \maketitle                               % 속표지 생성
   \if@isFinal                              % final 옵션이 지정되어 있으면
     \newgeometry{       left = 35mm,
                        right = 30mm,
@@ -511,45 +510,6 @@
        \fontsize{16pt}{16pt}\selectfont{2018년 \,2월}    
      \end{center}
      %\restoregeometry
-    \addevenpage
-}
-
-%%
-%% 속표지 생성
-%%
-\renewcommand{\maketitle}{%
-    \newpage
-    \renewcommand{\baselinestretch}{1.3}%
-    \thispagestyle{empty}
-    \hspace*{-15mm}\begin{minipage}[t][16pt][t]{142mm}
-      \begin{center}
-        \fontsize{16pt}{16pt}\selectfont\bf{\@advisorMajorChn\ 敎授指導}
-        \\[5mm]
-        \fontsize{16pt}{16pt}\selectfont\bf{\@degreeChn\ 士\ 學\ 位\ 論\ 文}
-        \\[30mm]
-        \fontsize{\@titleSize}{\@titleSize}\selectfont{\bf \@titleEng}
-      \end{center}
-    \end{minipage}\vfill
-    \begin{minipage}[b][110mm][b]{112mm}
-      \begin{center}
-        \if@isLongDeptName
-          \fontsize{16pt}{16pt}\selectfont{\bf 이 論文을 \@degreeName}\\
-          \fontsize{16pt}{16pt}\selectfont{\bf {\@degreeChn}士學位 論文으로 提出함}
-          \\[25mm]
-        \else
-          \fontsize{16pt}{16pt}\selectfont{\bf 이 論文을 \@degreeName{ }{\@degreeChn}士學位 論文으로 提出함}
-          \\[30mm]
-        \fi
-        \fontsize{14pt}{14pt}\selectfont{\bf {\@submitYear}年\ {\@submitMonth}月\ {\@submitDay}日}
-        \\[30mm]
-        \fontsize{\@univSize}{\@univSize}\selectfont{\bf 高\ 麗\ 大\ 學\ 校\ 大\ 學\ 院}
-        \\[5mm]
-        \fontsize{16pt}{16pt}\selectfont{\bf {\@deptNameChn}}
-        \\[10mm]
-        \fontsize{16pt}{16pt}\selectfont{\bf {\@authorChnSpace}}
-        \fontsize{14pt}{14pt}\selectfont{\bf \hspace{10mm} (印)}
-      \end{center}
-    \end{minipage}
     \addevenpage
 }
 
