@@ -9,6 +9,10 @@
 
 이전버전의 TeXLive에서 사용할 경우에는 koTeX을 따로 설치해주세요.
 
+컴파일을 위해서는 KTUG 사설저장소의 kotex-sections 패키지가 필요합니다.
+
+http://wiki.ktug.org/wiki/wiki.php/설치하기Windows/tlinstall 페이지를 참고하시면 됩니다.
+
 
 필수로 있어야 하는 파일
 =======================
