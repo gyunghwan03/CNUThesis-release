@@ -6,4 +6,4 @@ thesis:
 	@pdflatex $@
 
 clean:
-	rm -rf *.aux *.log *.lof *.lot *.out *.toc *.bbl *.blg *.pdf
+	rm -rf *.aux *.log *.lof *.lot *.out *.toc *.bbl *.blg 
